@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 43, 89);
+}
+#corpo{
+    display: flex;
+    flex-direction: columns;
+}
+h2{
+    margin-top: 15%;
+    text-align: center;
+    font-family: Trebuchet MS;
+}
+label{
+    font-family: Trebuchet MS;
+}
+#containerForms{
+    display: flex;
+    padding: 20px;
+    margin: 200px auto;
+}
+form {
+    position: fixed;
+    background-color: rgb(149, 144, 138);
+    justify-content: center;
+    flex-direction: column;
+    height: 410px;
+    width: 410px;
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+.input-email{
+    width: 250px;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.input-senha{
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20%;
+    border-radius: 8px;
+}
+.botao-enviar{
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+::placeholder{
+    font-family: Trebuchet MS;
+    color: black;
+    font-size: 12px;
+}
+.esqueceu-senha{
+    display: inline-block;
+    margin-bottom: -20px;
+    font-family: Trebuchet MS;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 35%;
+    cursor: pointer;
+    margin-top: 20px;
+}
