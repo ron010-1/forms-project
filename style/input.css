@@ -7,15 +7,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/img/sol.jpeg);
+    background-color: rgb(200, 200, 200);
+    transition: all .8s;                                                            
     color: #555;
     display: flex;
-    align-items: center;
-    justify-content: center
+    flex-direction: column;
     transition: background 0.2s linear;
 }
 body.dark{
-    background-image: url(/img/noite.jpeg);
+    transition: all .8s;
+    background-color: rgb(40,40,40);
     color: #fff;
 }
 #corpo{
@@ -30,20 +31,27 @@ h2{
 label{
     font-family: Nunito, sans-serif;
 }
+#botao-theme{
+    display: flex;
+    margin-left: 48%;
+    margin-top: 100px;
+}
 #containerForms{
     display: flex;
     padding: 20px;
-    margin: 200px auto;
+    margin-top: 100px;
+    margin-left: 38%;
 }
 form {
-    position: fixed;
-    background-color: #999999;
+    display: fixed;
+    background-color: #1c1c1ca2;
+    color: white;
     justify-content: center;
-    flex-direction: column;
     height: 410px;
     width: 410px;
     border: 4px solid transparent;
     border-radius: 10px;
+    transition: all .8s;
 }
 .input-email{
     width: 250px;
@@ -70,7 +78,8 @@ form {
 }
 ::placeholder{
     font-family: Nunito, sans-serif;;
-    color: black;
+    color: rgb(40,40,40, 0.5);
+    padding-left: 10px;
     font-size: 12px;
 }
 .esqueceu-senha{
